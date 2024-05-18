@@ -1,0 +1,314 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/15.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* start style navbar */
+.navbar {
+  background-color: #343434a6;
+}
+
+.navbar img {
+  width: 60px;
+  position: absolute;
+  left: 155px;
+  top: 10px;
+  margin-left: 5px;
+}
+
+.navbar img:hover {
+  width: 70px;
+  transition: 1s;
+}
+
+.navbar ul li a {
+  margin-right: 25px;
+}
+
+.n1 {
+  position: relative;
+  left: -60px;
+}
+
+.n2 ul li a {
+  color: aqua;
+}
+
+.n2 ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+span {
+  color: aqua;
+}
+
+span:hover {
+  color: black;
+}
+
+/* end style navbar */
+
+/* start mood dark and light */
+#darkModeBtn {
+  position: fixed;
+  top: 15px;
+  right: 1200px;
+  font-size: 18px;
+  border-radius: 66px 0px 0px 66px;
+  width: 40px;
+  outline: none;
+  /* علشان ميظهرش اني في تحديد لما اجيب الماوس عليها */
+  background-color: hsla(0, 0%, 0%, 0.571);
+  border: 1px solid silver;
+}
+
+#lightModeBtn {
+  position: fixed;
+  top: 15px;
+  right: 1155px;
+  font-size: 18px;
+  border-radius: 0px 66px 66px 0px;
+  width: 40px;
+  outline: none;
+  /* علشان ميظهرش اني في تحديد لما اجيب الماوس عليها */
+  background-color: hsla(0, 0%, 0%, 0.571);
+  border: 1px solid silver;
+
+
+}
+
+#darkModeBtn:hover,
+#lightModeBtn:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px gray;
+  transition: 1s;
+}
+
+#darkModeBtn:hover {
+  background-color: rgb(0, 0, 0);
+  transition: 1s;
+}
+/* end mood dark and light */
+
+/* start style form */
+form input {
+  width: 600px;
+  height: 50;
+  font-size: 18px;
+  text-align: center;
+  /* margin-left: 350px; */
+  position: absolute;
+  left: 400px;
+  border: 2px solid rgb(8, 8, 8);
+  margin-top: 50px;
+  padding: 16px 0px 16px 0px;
+}
+
+form button {
+  padding: 16px 16px 16px 0px;
+  background-color: aliceblue;
+  border: 4px rgba(0, 0, 0, 0.61) solid;
+  width: 74px;
+  position: absolute;
+  left: 1002px;
+  top: 75px;
+  margin-top: 2px;
+}
+/* end style form */
+
+/* start content */
+.content {
+  position: relative;
+  top: 350px;
+  width: 700px;
+  padding: 25px ;
+  margin-left: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  border-radius: 20px;
+  box-shadow: 0px 0px 9px white;
+}
+
+.content p {
+  text-align: justify;
+  font-weight: 500;
+  font-size: 19px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  animation: control-width1 9s 4s both infinite linear;
+  /* انير يعني يمشي بسلاسة من غير تقطيع
+  بوز يعني ياخد نفس افكيت الي قبلية اخر خاصية يفضل شغال لوحدة الي ما نهاية */
+}
+
+.content p:hover {
+  animation-play-state: paused;
+}
+
+/* معناه لما اجيب السهم عليه وقف حركة */
+
+@keyframes control-width1 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 650px;
+  }
+
+  75% {
+    color: rgb(60, 255, 0);
+  }
+
+  100% {
+    color: rgb(192, 0, 250);
+  }
+}
+
+.content h1 {
+  color: aqua;
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: control-width 8s 1s both infinite;
+  /* اول وقت دة الزمن هياخد في الحركة تاني وقت يبدا من امتي */
+}
+
+.content h1:hover {
+  animation-play-state: paused;
+}
+
+@keyframes control-width {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 460px;
+  }
+
+  70% {
+    color: chartreuse;
+  }
+
+  100% {
+    color: rgb(55, 0, 255);
+  }
+
+}
+
+/* end content */
+
+/* في واحدة content وفي واحدة contant ركز */
+
+
+/* start fotter */
+footer {
+  width: 100%;
+  height: 210px;
+  margin-top: 750px;
+  background-color: #343434a6;
+  background-image: url(../img/صورة\ الفوتر.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+footer ul {
+  list-style: none;
+}
+
+.contant,
+.data {
+  color: red;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+
+.contant {
+  color: red;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.data {
+  color: white;
+  text-align: justify;
+  /* علشان يخلي الكلام متناسق كدة تحت بعض */
+}
+
+.social-media {
+  text-align: center;
+  position: relative;
+  top: -25px;
+  list-style: none;
+  color: aqua;
+  font-size: 20px;
+  color: red;
+  font-weight: 800;
+
+}
+
+.social {
+  text-align: center;
+  position: relative;
+  top: -15px;
+  font-size: 20px;
+
+}
+
+.social .a-1 {
+  text-decoration: none;
+}
+
+.social i {
+  font-size: 26px;
+  position: relative;
+  left: -10px;
+  color: blue;
+  border-radius: 60%;
+  background-color: gray;
+  padding: 2px;
+}
+
+.social i:hover {
+  transition: 1.4s;
+  color: aqua;
+  background-color: blueviolet;
+}
+
+footer p {
+  width: 300px;
+  height: 35px;
+  text-align: center;
+  margin-left: 570px;
+  padding: 10px;
+  color: white;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  font-size: 15px;
+}
+
+/* end footer */
+
+/* start footer-2 */
+/* .fotter-2 {
+  margin-top: 0px;
+  height: 30px;
+  background-color: rgba(52, 52, 241, 0.534);
+  text-align: center;
+} */
+/* end footer-2 */
